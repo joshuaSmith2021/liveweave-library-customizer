@@ -1,4 +1,4 @@
-document.getElementById('submit').addEventListener('click', function () {
+function show () {
   var resource = {
     type: document.getElementById('type').value,
     url: document.getElementById('link').value
@@ -9,4 +9,4 @@ document.getElementById('submit').addEventListener('click', function () {
   } else {
     alert('Be sure to select a resource type and enter a URL to your resource.');
   }
-});
+}
