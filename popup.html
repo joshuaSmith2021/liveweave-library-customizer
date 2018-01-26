@@ -1,44 +1,23 @@
 <!DOCTYPE html>
-<html><head>
-    <title>Getting Started Extension's Popup</title>
-    <style type="text/css">
-      body {
-        margin: 10px;
-        white-space: nowrap;
-      }
-
-      h1 {
-        font-size: 15px;
-      }
-
-      #container {
-        align-items: center;
-        display: flex;
-        justify-content: space-between;
-      }
-    </style>
-
-    <!--
-      - JavaScript and HTML must be in separate files: see our Content Security
-      - Policy documentation[1] for details and explanation.
-      -
-      - [1]: https://developer.chrome.com/extensions/contentSecurityPolicy
-    -->
-    <script src="popup.js"></script>
+<html>
+  <head>
+    <title>Add a Source to Library</title>
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css"/>
+    <script type="text/javascript" src="pleasework.js"></script>
   </head>
-
   <body>
-    <h1>Background Color Changer</h1>
-    <div id="container">
-      <span>Choose a color</span>
-      <select id="dropdown">
-        <option selected="" disabled="" hidden="" value=""></option>
-        <option value="white">White</option>
-        <option value="pink">Pink</option>
-        <option value="green">Green</option>
-        <option value="yellow">Yellow</option>
+    <div class="w3-container w3-blue-grey">
+      <h2>Add Library</h2>
+      <select class="w3-input" id="type">
+        <option value="null" selected hidden>Select Resource Type</option>
+        <option value="script">Script</option>
+        <option value="css">CSS</option>
       </select>
+      <br/>
+      <input type="text" class="w3-input" id="link" placeholder="Link to Resource"/>
+      <br/>
+      <div class="w3-button w3-white" id="submit">Add Resource</div>
+      <br/><br/>
     </div>
-
-
-</body></html>
+  </body>
+</html>
